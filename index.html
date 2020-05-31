@@ -78,11 +78,11 @@ fetch('https://picsum.photos/800/600?grayscale')
 }
 
 function paraInformaticos(){
-    fetch('http://quotes.stormconsultancy.co.uk/random.json') 
+    fetch('https://geek-jokes.sameerkumar.website/api') 
         .then((response)=>response.json())
         .then(function(resp){
             // console.log(resp.quote)
-            document.getElementById('frase').innerHTML = resp.quote
+            document.getElementById('frase').innerHTML = resp
         })
         .catch(function(error){
             console.log(error)
