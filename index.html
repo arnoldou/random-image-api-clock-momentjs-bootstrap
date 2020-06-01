@@ -9,14 +9,14 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment-with-locales.min.js"></script>
-</head>
-        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js" integrity="sha256-5oApc/wMda1ntIEK4qoWJ4YItnV4fBHMwywunj8gPqc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/locale/es.js"></script>
+    
 <style>
 body {
     background-color: black;
 }
-#reloj{
+#reloj, h2{
     font-family: 'Michroma', sans-serif;
     font-size: 35px;
 }
@@ -44,12 +44,12 @@ h2{
             </div>
             <div>
                 <h2 class="mt-5 text-white">Consejo del Dia:</h2>
-                <p id="consejo" class="text-white">El Consejo va aqui.</p>
+                <p id="consejo" class="text-muted text-white">El Consejo va aqui.</p>
                 <button class="btn btn-light" onclick="consejoDelDia()">Nuevo Consejo</button>
             </div>
             <div>
                 <h2 class="mt-5 text-white">Para Informáticos:</h2>
-                <p id="frase" class="text-white">Frase.</p>
+                <p id="frase" class="text-muted text-white">Frase.</p>
                 <button class="btn btn-light" onclick="paraInformaticos()">Nueva Frase</button>
             </div>
             <div class="mt-5 row"><hr>
